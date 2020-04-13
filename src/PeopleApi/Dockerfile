@@ -7,5 +7,5 @@ RUN dotnet publish -c Release -o output
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
 COPY --from=build app/output .
-ENTRYPOINT [ "dotnet", "LocationApi.dll" ]
+ENTRYPOINT [ "dotnet", "PeopleApi.dll" ]
 EXPOSE 80

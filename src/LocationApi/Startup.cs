@@ -48,7 +48,7 @@ namespace LocationApi
                 return next();
             });
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 
